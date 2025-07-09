@@ -58,6 +58,7 @@ boolean check
 '''
 #calc evaluation using parse
 
+'''
 import argparse
 parser=argparse.ArgumentParser(description="Add 2 numbers")
 parser.add_argument('--x',type=int,required=True,help="First number")
@@ -73,7 +74,28 @@ elif args.opt=='mul':
 elif args.opt=='div':
     result=args.x/args.y
 print("Result is ",result)
+'''
+'''
+import os
+path="."
+files=os.listdir(path)
+print("Files and olders in current directory :")
+for f in files:
+    print(f)
+'''
 
+import os
+folder="Likky"
+if not os.path.exists(folder):
+    os.mkdir(folder)
+    print(f"Folder {folder} created")
+else:
+    print(f"Folder {folder} already exits.")
+path="."
+files=os.listdir(path)
+print("File an olders in current directory :")
+for f in files:
+    print(f)
 
 
 
