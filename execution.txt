@@ -35,3 +35,20 @@ PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt mod
 usage: sample.py [-h] --x X --y Y --opt {add,sub,mul,div}
 sample.py: error: argument --opt: invalid choice: 'mod' (choose from 'add', 'sub', 'mul', 'div')
 PS C:\Users\ComputerCenter3\Desktop\b1> 
+
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py 
+Files and olders in current directory :
+execution.txt
+sample.py
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py 
+Folder Likky created
+File an olders in current directory :
+execution.txt
+Likky
+sample.py
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py 
+Folder Likky already exits.
+File an olders in current directory :
+execution.txt
+Likky
+sample.py

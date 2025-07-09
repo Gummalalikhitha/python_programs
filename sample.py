@@ -75,6 +75,7 @@ elif args.opt=='div':
     result=args.x/args.y
 print("Result is ",result)
 '''
+#Viewing files in current directory
 '''
 import os
 path="."
@@ -84,6 +85,7 @@ for f in files:
     print(f)
 '''
 
+'''
 import os
 folder="Likky"
 if not os.path.exists(folder):
@@ -96,14 +98,24 @@ files=os.listdir(path)
 print("File an olders in current directory :")
 for f in files:
     print(f)
+'''
 
+#Deleting file
+'''
+import os
+file="DeleteMe.txt"
+if os.path.exists(file):
+    os.remove(file)
+    print(f"File {file} is deleted")
+else:
+    print("File not found")
+'''
 
-
-
-
-
-
-
-
-
+import os
+file="sample.py"
+if os.path.exists(file):
+    size=os.path.getsize(file)
+    print(f"{file} size:{size} bytes.")
+else:
+    print("File not found")
 
