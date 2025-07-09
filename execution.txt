@@ -1,0 +1,37 @@
+C:\Users\ComputerCenter3>python --version
+Python 3.13.0
+
+C:\Users\ComputerCenter3>cd "C:\Users\ComputerCenter3\Desktop\b1"
+
+C:\Users\ComputerCenter3\Desktop\b1>python sample.py
+Script name: sample.py
+All args: []
+No arguments provided
+
+C:\Users\ComputerCenter3\Desktop\b1>python sample.py India USA
+Script name: sample.py
+All args: ['India', 'USA']
+First argv: India
+
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 11
+Sum is  21
+
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x '10' --y '11a'
+usage: sample.py [-h] --x X --y Y
+sample.py: error: argument --y: invalid int value: '11a'
+
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt add
+Result is  30
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt sub 
+Result is  -10
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt div
+Result is  0.5
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt mul
+Result is  200
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt    
+usage: sample.py [-h] --x X --y Y --opt {add,sub,mul,div}
+sample.py: error: argument --opt: expected one argument
+PS C:\Users\ComputerCenter3\Desktop\b1> python sample.py --x 10 --y 20 --opt mod
+usage: sample.py [-h] --x X --y Y --opt {add,sub,mul,div}
+sample.py: error: argument --opt: invalid choice: 'mod' (choose from 'add', 'sub', 'mul', 'div')
+PS C:\Users\ComputerCenter3\Desktop\b1> 
