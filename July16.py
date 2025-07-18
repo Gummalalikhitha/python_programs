@@ -58,16 +58,10 @@ list=[[1,2,3],[3,3,3],[4,5,6]] '''
 # * * * _ * * *
 # * * * * * * *
 
-
-n=int(input())
-for i in range(1,n+1):
-    for j in range(i,n+1):
-        print("*",end=" ")
-    for k in range(1,i+1):
-        print("_",end=" ")
-    print()
-
-
+# n=9
+# p=[" ".join("_" if (abs(i-n//2)+abs(j-n//2)<n//2) and i!=0 and i!=n-1 else "+"for j in range(n)) for i in range(n)]
+# for r in p:
+#     print(r)
 
 
 
