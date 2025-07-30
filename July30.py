@@ -73,11 +73,28 @@ print(np.array(b).reshape((2,2)))
 a=np.arange(1,10)
 reshaped=a.reshape((3,3))
 print(reshaped)
-linear=reshaped.reshape(-1)
+print("element at (1,1):",reshaped)
+linear=reshaped.reshape(-1)  #li=reshaped.flatten()  #both has same function
 print(linear)
+li=reshaped.flatten()
+print("greater than 5:",linear[linear>5])
+print("less than 5 :",li[li<5])
+print("Random numbers between 0 to 3:",np.random.rand(3))
+print("random integer:\n",np.random.randint(100,size=(2,3)))
+
 
 '''ADES-Advance Data Structure'''
 '''linked list perform the insert at begining and deleting at end ,double/circular linkedlist'''
 '''find duplicate element in linkedlist and find its occurance'''
 '''trees,graphs'''
 
+'''code to print a 3x3 matrix which were filled with boolean value True using numpy'''
+import numpy as np
+a=np.ones(9,dtype=bool)
+# print(a)
+b=a.reshape((3,3))
+print(b)
+
+import numpy as np
+arr=np.full((3,3),True)
+print(arr)
